@@ -12,9 +12,11 @@ import { Router } from '@angular/router';
 })
 export class SignupComponent {
   // constructor(private authService: AuthService, private router: Router) {}
+  constructor(private router: Router) {}
 
   register(regForm: NgForm) {
     console.log(regForm.value);
+    // this.router.navigate(['/login']);
     // this.authService.registerUser(regForm.value.email, regForm.value.password);
   }
   reset(regForm: NgForm) {
